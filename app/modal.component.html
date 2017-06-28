@@ -1,9 +1,8 @@
-<GridLayout backgroundColor="white">
-  <ListView [items]="frameworks" class="list-group">
-    <ng-template let-framework="item">
-      <StackLayout class="list-group-item" (tap)="close(framework)">
-        <Label text="{{ framework }}" class="label"></Label>
-      </StackLayout>
-    </ng-template>
-  </ListView>
+<GridLayout class="page" style="background-color: gray">
+  <StackLayout>
+    <Label text="Modal Frame" class="h1 text-center" textWrap="true"></Label>
+    <Button text="Close" class="btn btn-primary text-center" (tap)="close('none')"></Button>
+    <page-router-outlet></page-router-outlet>
+    <!--<router-outlet></router-outlet>-->
+  </StackLayout>
 </GridLayout>

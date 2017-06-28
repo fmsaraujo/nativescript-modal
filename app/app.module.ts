@@ -10,13 +10,17 @@ import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 
 import { ModalComponent } from './modal.component';
+import { FrameworksComponent } from './frameworks/frameworks.component';
+import { FrameworkDetailComponent } from './frameworks/framework-detail.component';
 
 @NgModule({
   bootstrap: [
-    AppComponent
+    AppComponent,
   ],
   entryComponents: [
-    ModalComponent
+    ModalComponent,
+    FrameworksComponent,
+    FrameworkDetailComponent,
   ],
   imports: [
     NativeScriptModule,
@@ -27,6 +31,8 @@ import { ModalComponent } from './modal.component';
     ItemsComponent,
     ItemDetailComponent,
     ModalComponent,
+    FrameworksComponent,
+    FrameworkDetailComponent,
   ],
   providers: [
     ItemService,
